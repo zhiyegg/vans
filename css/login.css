@@ -1,0 +1,122 @@
+.content{
+	width:100%;
+	height:532px;
+	background-color: #f1f2ed;
+	display:  flex;
+	justify-content:center; 
+	align-items: center;
+}
+.loginDiv{
+	width: 600px;
+	height: 410px;
+	border: 1px solid #c9caca;
+	background-color: white;
+}
+.loginDiv h3{
+	font-size: 24px;
+	padding-top: 45px;
+	padding-left: 60px;
+}
+.loginDiv h3 a{
+	display: block;
+	text-align: center;
+	width:160px;
+	padding-bottom: 5px;
+	color: #666666;
+	border-bottom: 1px solid transparent;
+}
+.loginDiv h3 a:hover{
+	color: #c9192e;
+
+	border-bottom: 1px solid #c9192e;
+}
+.loginDiv input:nth-child(2){
+	width:480px;
+	height:50px;
+	border:1px solid #d7d8d4;
+	margin-top: 9px;
+	margin-left: 60px;
+	font-size: 18px;
+}
+.loginDiv input:nth-child(2)::-webkit-input-placeholder{
+	font-size:14px;
+	color:#e7e7e7;
+	text-indent: 20px;
+}
+
+
+.loginDiv img:nth-child(3){
+	position: absolute;
+	margin-left:60px;
+	float: left;
+	display: none;
+}
+
+
+.loginDiv input:nth-child(4){
+	width:480px;
+	height:50px;
+	border:1px solid #d7d8d4;
+	margin-top: 20px;
+	margin-left: 60px;
+	font-size: 18px;
+}
+.loginDiv input:nth-child(4)::-webkit-input-placeholder{
+	font-size: 14px;
+	color:#e7e7e7;
+	text-indent: 20px;
+}
+.loginDiv img:nth-child(5){
+	position: absolute;
+	float: left;
+	margin-left:60px;
+	display: none;
+}
+
+.loginDiv a:nth-child(6){
+	display: block;
+	color:#d2d2d2;
+	font-size: 16px;
+	margin-left: 460px;
+	margin-bottom: 18px;
+	padding-top:30px;
+}
+.loginDiv input:nth-child(7){
+	width:310px;
+	height:50px;
+	background-color:#c9192e;
+	color:white;
+	box-sizing: content-box;
+	border:none;
+	font-size: 16px;
+	margin-left: 60px;
+	margin-right:22px;
+	cursor:pointer;
+	outline: none;
+}
+.loginDiv a:nth-child(8){
+	display:inline-block;
+	text-align:center;
+	line-height:50px;
+	width:150px;
+	height:50px;
+	background-color:black;
+	color:white;
+	font-size: 16px;
+	cursor:pointer;
+}
+.loginDiv ul li{
+	float: left;
+	margin-right: 10px;
+	margin-top: 25px;
+}
+.loginDiv ul li:nth-child(1){
+	margin-left: 60px;
+	height:40px;
+	line-height:40px;
+	color:#666666;
+	font-size:16px;
+	font-weight: 900;
+	margin-right: 12px;
+
+}

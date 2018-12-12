@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VANS商品</title>
+    <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="../css/goods.css">
+    <link rel="stylesheet" href="../css/foot.css">
+    <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.3.js"></script>
+    <script type="text/javascript" src="../js/cookieTools.js" ></script>
+</head>
+<body>
+    <!--头部导航-->
+    <div class="top">
+        <div class="header">
+            <div class="logoimg"><a href="index.html"><img src="../img/logo.jpg"></a></div>
+            <div class="headerRight">
+                <div class="navUp">
+                    <div  id="welcomeBox">欢迎：<span id="usernameSpan"></span><input id="btnOut" type="button" value="退出" /></div>
+                    <a id="goodsCar" href="">我的购物车</a>
+                    <div id="carDiv">
+                        <img src="../img/jiao.png" alt=""/>
+                        购物车还没有物品，请添加~
+                    </div>
+                    <a href="login.html" id="loginA">登陆/注册</a>
+                    <a href="">搜索店铺</a>
+
+                </div>
+                <ul class="navDown">
+                    <li><a href="#" id="aboutVans">关于VANS / </a>  </li>
+                    <div id="vansDiv">
+                        <div id="jiao"></div>
+                        <a href="#">THIS IS OFF THE WALL </a><a href="#">新闻</a>
+                    </div>
+                    <li><a href="#">热门 / </a> </li>
+                    <li><a href="#" id="man">男子 / </a> </li>
+                    <div id="manDiv">
+                        <div id="jiao"></div>
+                        <a href="#">鞋款</a>
+                        <a href="#">服饰</a>
+                        <a href="#">配件</a>
+                        <img src="../img/navpic1.jpg" alt=""/>
+                    </div>
+                    <li><a href="#" id="girl">女子 / </a> </li>
+                    <div id="girlDiv">
+                        <div id="jiao"></div>
+                        <a href="#">鞋款</a>
+                        <a href="#">服饰</a>
+                        <a href="#">配件</a>
+                        <img src="../img/navpic2.jpg" alt=""/>
+                    </div>
+                    <li><a href="#">CUSTOMS定制鞋 / </a> </li>
+                    <li><a href="#" id="more">更多</a></li>
+                    <div id="moreDiv">
+                        <div id="jiao"></div>
+                        <a href="#">CLASSICS 经典款</a>
+                        <a href="#">VAULT BY VANS</a>
+                        <a href="#">PRO SKATE 职业鞋款</a>
+                        <a href="#">SNOW 职业滑雪系列</a>
+                    </div>
+                    <input class="souInp" type="text" placeholder="搜索VANS"/>
+                    <input type="submit" value=""/>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- content部分 -->
+    <div class="content">
+        <div class="conUp">
+            <ul>
+                <li>全部男子</li>
+                <li id="clickLi">排序: <span>最新</span> <img src="../img/jiao.jpg" alt="#"/></li>
+            </ul>
+            <div id="selectedDiv">
+                <a href="#">最新</a>
+                <a href="#">按价格 从高到低</a>
+                <a href="#">按价格 从低到高</a>
+                <a href="#">最新上架时间</a>
+                <a href="#">销量 从高到低</a>
+                <a href="#">销量 从低到高</a>
+            </div>
+            <img src="../img/br.jpg" alt="#" class="brImg"/>
+        </div>
+        <div class="conDown">
+            <ul id="selectGoods">
+                <li>颜色 <img class="plus" src="../img/jian.jpg" alt="#"/><div>
+                    <a href="">黑色</a><a href="">蓝色</a><a href="">灰色</a><a href="">白色</a><a href="">黄色</a>
+                    <a href="">红色</a><a href="">米黄色</a><a href="">咖啡色</a><a href="">深蓝色</a><a href="">浅蓝色</a><a
+                        href="">紫色</a><a href="">其他</a><a href="">肉色</a>
+                </div></li>
+                <li>服配尺码 <img src="../img/plus.jpg" alt="#"/><div>
+                    <a href="">均码</a><a href="">XXS</a><a href="">XS</a><a href="">S</a><a href="">M</a>
+                    <a href="">L</a><a href="">XL</a><a href="">XXL</a><a href="">XSS</a><a href="">ML</a><a
+                        href="">24</a><a href="">26</a><a href="">28</a>
+                </div></li>
+                <li>鞋码 <img src="../img/plus.jpg" alt="#"/><div>
+                    <a href="">34.5</a><a href="">35</a><a href="">36</a><a href="">36.5</a><a href="">37</a>
+                    <a href="">37.5</a><a href="">38</a><a href="">38.5</a><a href="">39</a><a href="">40</a><a
+                        href="">41</a><a href="">41.5</a><a href="">42</a>
+                </div></li>
+                <li>鞋服配 <img src="../img/plus.jpg" alt="#"/><div>
+                    <a href="">鞋</a><a href="">服装</a><a href="">配件</a>
+                </div></li>
+                <li>穿法 <img src="../img/plus.jpg" alt="#"/><div>
+                        <a href="">系带</a><a href="">一脚蹬</a><a href="">魔术帖</a>
+                </div></li>
+                <li>鞋帮 <img src="../img/plus.jpg" alt="#"/><div>
+                    <a href="">低帮</a><a href="">中帮</a><a href="">高帮</a>
+                </div></li>
+            </ul>
+            <ul id="goodsList">
+
+            </ul>
+            <script>
+                $(document).ready(function(){
+                    $.ajax({
+                        type:"get",
+                        url:"../php/getGoodsList.php",
+                        success:function(data){
+                            createUI(data);
+                        }
+                    });
+                });
+                function createUI(data){
+                    let goodsJson = jQuery.parseJSON(data);
+                    console.log(goodsJson);
+                    for(let i=0;i<goodsJson.length;i++){
+
+                        let str="<li id='showLi'><img src='"+ goodsJson[i].goodsImg +"' />" +
+                            "<a href='details.html?booksId="+goodsJson[i].goodsId+"'>"+ goodsJson[i].goodsName +"</a>" +
+                            "<p>￥<span>"+ goodsJson[i].goodsPrice +"</span></p>" +
+                            "</li>";
+                        // console.log(goodsJson[i].goodsImg);
+                        // console.log(goodsJson[i].goodsName);
+                        // console.log(goodsJson[i].goodsPrice);
+                        console.log(str);
+                        $("#goodsList").append(str);
+                    }
+                }
+            </script>
+        </div>
+    </div>
+    <!--foot-->
+    <div class="banFoot">
+        <div class="foot">
+            <div class="footUp">
+                <div class="help">
+                    <h3>获取帮助</h3>
+                    <ul class="ulOne">
+                        <li>购物</li>
+                        <li><a href="#">男子</a></li>
+                        <li><a href="">女子</a></li>
+                        <li><a href="">CUSTOMS</a></li>
+                        <li><a href="">Vault by Vans</a></li>
+                        <li><a href="">职业鞋款</a></li>
+                        <li><a href="">查找店铺</a></li>
+                    </ul>
+                    <ul class="ulTwo">
+                        <li>公司</li>
+                        <li><a href="">常见问题</a></li>
+                        <li><a href="">使用条款</a></li>
+                        <li><a href="">隐私政策</a></li>
+                        <li><a href="">可持续发展</a></li>
+                    </ul>
+                </div>
+                <div class="connect">
+                    <h3>联系我们</h3>
+                    <ul class="ulThree">
+                        <li>电子邮件</li>
+                        <li><a href="">contactus@vans.com.cn</a></li>
+                    </ul>
+                    <ul class="ulFour">
+                        <li>地址</li>
+                        <li>中国上海市南京西路688号8楼</li>
+                    </ul>
+                </div>
+                <div class="find">
+                    <h3>在这些地方找到我们</h3>
+                    <div class="aDiv">
+                        <a href="#"><img src="../img/foot1.jpg" alt=""/></a>
+                        <a href="#"><img src="../img/foot2.jpg" alt=""/></a>
+                        <a href="#"><img src="../img/foot3.jpg" alt=""/></a>
+                        <a href="#"><img src="../img/foot4.jpg" alt=""/></a>
+                        <a href="#"><img src="../img/foot5.jpg" alt=""/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footDown">
+                <img src="../img/vans.jpg" alt=""/>
+                <div class="wordDiv">
+                    <p><span>苏ICP13010219号</span> 工信部网站</p>
+                    <p>威富服饰（中国）有限公司</p>
+                    <img src="../img/slecet.jpg" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+
+    function initUI(username){
+        if(username!=null){
+            $("#usernameSpan").html(username);
+            $("#welcomeBox").css("display","block");
+            $("#loginA").css("display","none");
+        }else{
+            $("#welcomeBox").css("display","none");
+            $("#loginA").css("display","block");
+        }
+    }
+
+
+
+    $(document).ready(function(){
+        let username = getCookie("name");
+
+        initUI(username);
+        $("#btnOut").click(function(){
+            removeCookie("name");
+            location.href="../html/login.html";
+        });
+    });
+
+    $(document).ready(function(){
+        //加载完成carDiv隐藏
+        $("#carDiv").hide();
+        //滑入goodsCar出现，滑出隐藏
+        $("#goodsCar").hover(function() {
+            $("#carDiv").show();
+        }, function() {
+            $("#carDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#carDiv").hover(function() {
+            $("#carDiv").show();
+        }, function() {
+            $("#carDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#vansDiv").hide();
+        $("#aboutVans").hover(function() {
+            $("#vansDiv").show();
+        }, function() {
+            $("#vansDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#vansDiv").hover(function() {
+            $("#vansDiv").show();
+        }, function() {
+            $("#vansDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#manDiv").hide();
+        $("#man").hover(function() {
+            $("#manDiv").show();
+        }, function() {
+            $("#manDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#manDiv").hover(function() {
+            $("#manDiv").show();
+        }, function() {
+            $("#manDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#girlDiv").hide();
+        $("#girl").hover(function() {
+            $("#girlDiv").show();
+        }, function() {
+            $("#girlDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#girlDiv").hover(function() {
+            $("#girlDiv").show();
+        }, function() {
+            $("#girlDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#moreDiv").hide();
+        $("#more").hover(function() {
+            $("#moreDiv").show();
+        }, function() {
+            $("#moreDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#moreDiv").hover(function() {
+            $("#moreDiv").show();
+        }, function() {
+            $("#moreDiv").hide();
+        });
+    });
+    //---------------------------------------------------------
+
+
+    $(document).ready(function(){
+        $("#clickLi").mouseenter(function(){
+            $("#clickLi").toggle(function(){
+                $("#selectedDiv").css("display","block");
+            },function(){
+                $("#selectedDiv").css("display","none");
+            });
+        });
+
+    });
+    $("#selectedDiv a").each(function(){
+        $(this).click(function(){
+            let str = $(this).html();
+            $("#clickLi span").html(str);
+            $("#selectedDiv").css("display","none");
+        });
+    });
+
+
+    $(document).ready(function(){
+        $("#selectGoods li").each(function(){
+            $(this).toggle(function(){
+                $(this).children("div:last-child").css("display","block");
+                $(this).children("img:first-child").attr("src","../img/jian.jpg");
+
+            },function(){
+                $(this).children("div:last-child").css("display","none");
+                $(this).children("img:first-child").attr("src","../img/plus.jpg");
+
+            });
+        });
+    });
+</script>

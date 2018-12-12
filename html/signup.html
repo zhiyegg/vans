@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>注册</title>
+	<link rel="stylesheet" href="../css/top.css"/>
+	<link rel="stylesheet" href="../css/signup.css"/>
+	<link rel="stylesheet" href="../css/foot.css"/>
+	<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="../js/jquery1.42.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.3.js"></script>
+
+</head>
+<body>
+	<!--头部导航-->
+	<div class="top">
+		<div class="header">
+			<div class="logoimg"><a href="index.html"><img src="../img/logo.jpg" alt="#"></a></div>
+			<div class="headerRight">
+				<div class="navUp">
+					<a id="goodsCar" href="">我的购物车</a>
+					<div id="carDiv">
+						<img src="../img/jiao.png" alt=""/>
+						购物车还没有物品，请添加~
+					</div>
+					<a href="login.html">登陆/注册</a>
+					<a href="">搜索店铺</a>
+				</div>
+				<ul class="navDown">
+					<li><a href="#" id="aboutVans">关于VANS / </a>  </li>
+					<div id="vansDiv">
+						<div id="jiao"></div>
+						<a href="#">THIS IS OFF THE WALL </a><a href="#">新闻</a>
+					</div>
+					<li><a href="#">热门 / </a> </li>
+					<li><a href="#" id="man">男子 / </a> </li>
+					<div id="manDiv">
+						<div id="jiao"></div>
+						<a href="#">鞋款</a>
+						<a href="#">服饰</a>
+						<a href="#">配件</a>
+						<img src="../img/navpic1.jpg" alt=""/>
+					</div>
+					<li><a href="#" id="girl">女子 / </a> </li>
+					<div id="girlDiv">
+						<div id="jiao"></div>
+						<a href="#">鞋款</a>
+						<a href="#">服饰</a>
+						<a href="#">配件</a>
+						<img src="../img/navpic2.jpg" alt=""/>
+					</div>
+					<li><a href="#">CUSTOMS定制鞋 / </a> </li>
+					<li><a href="#" id="more">更多</a></li>
+					<div id="moreDiv">
+						<div id="jiao"></div>
+						<a href="#">CLASSICS 经典款</a>
+						<a href="#">VAULT BY VANS</a>
+						<a href="#">PRO SKATE 职业鞋款</a>
+						<a href="#">SNOW 职业滑雪系列</a>
+					</div>
+					<input class="souInp" type="text" placeholder="搜索VANS"/>
+					<input type="submit" value=""/>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<!--content部分 -->
+	<div class="content">
+		<div class="signupDiv">
+			<ul>
+				<li><h3>用户注册</h3></li>
+				<li><input type="text" placeholder="请输入11位手机号" id="userId"/><img src="../img/exp1.jpg" alt="#"/></li>
+				<li><input type="text" placeholder="8-20个字母、数字或符号组合，请不要输入特殊字符" id="userPw"/><img src="../img/exp3.jpg" alt="#"/></li>
+				<li><input type="password" placeholder="再次填写密码" id="pwTwo"/><img src="../img/exp2.jpg" alt="#"/></li>
+				<li><input type="text"/><input type="button" value="获取短信验证码"/></li>
+				<li><input type="button" value="立即注册" id="btnSig"/></li>
+				<li><input type="checkbox" id="checkDiv" />我已经阅读并同意VANS的 <a href="#">隐私政策</a> 和 <a href="#">使用条款</a><img id="showImg" src="../img/exp4.jpg" alt="#"/></li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+
+	window.onload = function(){
+		//用户名的正则验证
+	    $("#userId").blur(function(){
+            let reg = /^1[3-9]\d{9}$/i;
+            if(reg.test($(this).val())){
+                $(this).next().css("display","none");
+			}else{
+                $(this).next().css("display","block");
+			}
+		});
+	    //密码的正则验证
+		$("#userPw").blur(function(){
+		    let reg =/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,20}$/i;
+		    if(reg.test($(this).val())){
+		        $(this).next().css("display","none");
+			}else{
+		        $(this).next().css("display","block");
+			}
+		});
+		//重复密码验证
+		$("#pwTwo").blur(function(){
+		    if($("#userPw").val()!=$("#pwTwo").val()){
+                $("#pwTwo").next().css("display","block");
+			}else{
+                $("#pwTwo").next().css("display","none");
+			}
+		});
+
+		//点击提交按钮,连接服务器验证并保存用户信息
+		$("#btnSig").click(function(){
+			let vipId = $("#userId").val();
+			let vipPw = $("#userPw").val();
+			let pwTwo = $("#pwTwo").val();
+
+			if($("#checkDiv").attr("checked")){
+                $("#showImg").css("display","none");
+				if(vipPw==pwTwo && vipId!=""){
+					$.ajax({
+						type:"post",
+						url:"../php/signup.php",
+						data:{id:vipId, pw:vipPw},
+						success:function(data){
+							console.log(data);
+							if(data==1){
+								alert("注册成功！")
+								window.location.href="login.html";
+							}else if(data==2){
+								alert("注册失败请重新注册~");
+							}else if(data==3){
+								alert("用户名或密码重复，请重新注册~")
+							}
+						}
+					});
+				}
+			}else{
+				$("#showImg").css("display","block");
+
+			}
+
+		});
+
+
+
+
+
+
+
+
+	}
+
+
+
+
+	</script>
+
+
+
+
+	<!--foot部分-->
+	<div class="banFoot">
+		<div class="foot">
+			<div class="footUp">
+				<div class="help">
+					<h3>获取帮助</h3>
+					<ul class="ulOne">
+						<li>购物</li>
+						<li><a href="">男子</a></li>
+						<li><a href="">女子</a></li>
+						<li><a href="">CUSTOMS</a></li>
+						<li><a href="">Vault by Vans</a></li>
+						<li><a href="">职业鞋款</a></li>
+						<li><a href="">查找店铺</a></li>
+					</ul>
+					<ul class="ulTwo">
+						<li>公司</li>
+						<li><a href="">常见问题</a></li>
+						<li><a href="">使用条款</a></li>
+						<li><a href="">隐私政策</a></li>
+						<li><a href="">可持续发展</a></li>
+					</ul>
+				</div>
+				<div class="connect">
+					<h3>联系我们</h3>
+					<ul class="ulThree">
+						<li>电子邮件</li>
+						<li><a href="">contactus@vans.com.cn</a></li>
+					</ul>
+					<ul class="ulFour">
+						<li>地址</li>
+						<li>中国上海市南京西路688号8楼</li>
+					</ul>
+				</div>
+				<div class="find">
+					<h3>在这些地方找到我们</h3>
+					<div class="aDiv">
+						<a href="#"><img src="../img/foot1.jpg" alt=""/></a>
+						<a href="#"><img src="../img/foot2.jpg" alt=""/></a>
+						<a href="#"><img src="../img/foot3.jpg" alt=""/></a>
+						<a href="#"><img src="../img/foot4.jpg" alt=""/></a>
+						<a href="#"><img src="../img/foot5.jpg" alt=""/></a>
+					</div>
+				</div>
+			</div>
+			<div class="footDown">
+				<img src="../img/vans.jpg" alt=""/>
+				<div class="wordDiv">
+					<p><span>苏ICP13010219号</span> 工信部网站</p>
+					<p>威富服饰（中国）有限公司</p>
+					<img src="../img/slecet.jpg" alt=""/>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        //加载完成carDiv隐藏
+        $("#carDiv").hide();
+        //滑入goodsCar出现，滑出隐藏
+        $("#goodsCar").hover(function() {
+            $("#carDiv").show();
+        }, function() {
+            $("#carDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#carDiv").hover(function() {
+            $("#carDiv").show();
+        }, function() {
+            $("#carDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#vansDiv").hide();
+        $("#aboutVans").hover(function() {
+            $("#vansDiv").show();
+        }, function() {
+            $("#vansDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#vansDiv").hover(function() {
+            $("#vansDiv").show();
+        }, function() {
+            $("#vansDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#manDiv").hide();
+        $("#man").hover(function() {
+            $("#manDiv").show();
+        }, function() {
+            $("#manDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#manDiv").hover(function() {
+            $("#manDiv").show();
+        }, function() {
+            $("#manDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#girlDiv").hide();
+        $("#girl").hover(function() {
+            $("#girlDiv").show();
+        }, function() {
+            $("#girlDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#girlDiv").hover(function() {
+            $("#girlDiv").show();
+        }, function() {
+            $("#girlDiv").hide();
+        });
+    });
+
+
+    $(document).ready(function() {
+        $("#moreDiv").hide();
+        $("#more").hover(function() {
+            $("#moreDiv").show();
+        }, function() {
+            $("#moreDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#moreDiv").hover(function() {
+            $("#moreDiv").show();
+        }, function() {
+            $("#moreDiv").hide();
+        });
+    });
+
+
+
+</script>

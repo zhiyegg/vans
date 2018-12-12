@@ -1,0 +1,303 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family:"微软雅黑",Arial;
+	overflow-y: auto;
+	overflow-x: hidden;
+
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+img{
+	border:none;
+	display: block;
+}
+
+/*header导航*/
+.top{
+	width:100%;
+	height:130px;
+	border-bottom:16px solid black;
+}
+.header{
+	margin:0 auto;
+	width:1537px;
+	height:130px;
+	
+}
+.logoimg{
+	float: left;
+	width:auto;
+	padding-left: 110px;
+}
+.logoimg img{
+	width:100%;
+    height:auto;
+}
+.headerRight{
+	margin-right: 110px;
+	float: right;
+	min-width:765px;
+	height:130px;
+}
+.navUp{
+	height:50px;
+	line-height: 50px;
+	padding-left: 530px;
+}
+
+.navUp a{
+	float: left;
+	font-size: 16px;
+	color: #9b9b9b;
+	font-weight: 600;
+	margin-left:5px;
+}
+.navUp a:hover{
+	color:red;
+}
+#carDiv{
+	position: absolute;
+	top:50px;
+	right:132px;
+	width:300px;
+	height:50px;
+	background-color: #f1f2ed;
+	z-index: 99;
+	border:1px solid #d8d9d5;
+}
+#loginA{
+	display: block;
+	float: left;
+	margin-left:5px;
+}
+#welcomeBox{
+	display: none;
+	position: absolute;
+	right:335px;
+	float: left;
+	color:#9b9b9b;
+	font-weight:900;
+}
+#usernameSpan{
+	color:black;
+
+}
+#welcomeBox input{
+	margin-left: 5px;
+	width:40px;
+	height:20px;
+	background-color: #c9192e;
+	box-sizing: content-box;
+	border:none;
+	color: white;
+	outline:none;
+}
+#carDiv img{
+	position: absolute;
+	left: 130px;
+	top:-14px;
+}
+
+.navDown{
+	margin-top: 30px;
+	margin-left: 90px;
+}
+
+.navDown li{
+	float:left;
+	font-size: 16px;
+	padding-left: 10px;
+	font-weight: 900;
+}
+.navDown li a{
+	padding-bottom: 15px;
+	padding-top: 5px;
+	display:block;
+	color:black;
+}
+.navDown li a:hover{
+	color:#d10926;
+}
+.navDown .souInp{
+	outline: none;
+	margin-left: 30px;
+	width:150px;
+	height:30px;
+	float: left;
+	border:1px solid #d2d2d2;
+	border-right:none;
+}
+.navDown .souInp::-webkit-input-placeholder{
+	font-size:14px;
+	color:#e7e7e7;
+	font-weight:900;
+}
+.navDown input:last-child{
+	width:30px;
+	height:30px;
+	box-sizing:content-box;
+	background-image: url("../img/sou1.jpg");
+	background-position: 0 2px;
+	border:1px solid #d2d2d2;
+	border-left:none;
+}
+#vansDiv{
+	position: absolute;
+	left:0;
+	top:120px;
+	width:100%;
+	height:140px;
+	background-color: black;
+	z-index: 99;
+}
+#vansDiv #jiao{
+	position: absolute;
+	left:795px;
+	top:-20px;
+	width:0;
+	height:0;
+	border: 8px solid transparent;
+	border-bottom: 13px solid black;
+}
+#vansDiv a{
+	font-size: 16px;
+	color: white;
+	font-weight: 900;
+	display: inline-block;
+	margin-left: 140px;
+	line-height: 140px;
+}
+#vansDiv a:nth-child(2){
+	margin-left: 200px;
+}
+#vansDiv a:nth-child(3){
+	margin-left: 480px;
+}
+
+#manDiv{
+	position: absolute;
+	left:0;
+	top:120px;
+	width:100%;
+	height:340px;
+	background-color: black;
+	z-index: 99;
+}
+#manDiv #jiao{
+	position: absolute;
+	left:925px;
+	top:-20px;
+	width:0;
+	height:0;
+	border: 8px solid transparent;
+	border-bottom: 13px solid black;
+}
+#manDiv a{
+	font-size: 16px;
+	color: white;
+	font-weight: 900;
+	display: inline-block;
+	padding-top: 50px;
+}
+#manDiv a:nth-child(2){
+	margin-left: 150px;
+}
+#manDiv a:nth-child(3){
+	margin-left: 250px;
+}
+#manDiv a:nth-child(4){
+	margin-left: 250px;
+}
+#manDiv img{
+	float: right;
+	margin-right: 100px;
+	margin-top: 50px;
+
+}
+#girlDiv{
+	position: absolute;
+	left:0;
+	top:120px;
+	width:100%;
+	height:440px;
+	background-color: black;
+	z-index: 99;
+}
+#girlDiv #jiao{
+	position: absolute;
+	left:979px;
+	top:-20px;
+	width:0;
+	height:0;
+	border: 8px solid transparent;
+	border-bottom: 13px solid black;
+}
+#girlDiv a{
+	font-size: 16px;
+	color: white;
+	font-weight: 900;
+	display: inline-block;
+	padding-top: 50px;
+}
+#girlDiv a:nth-child(2){
+	margin-left: 150px;
+}
+#girlDiv a:nth-child(3){
+	margin-left: 250px;
+}
+#girlDiv a:nth-child(4){
+	margin-left: 250px;
+}
+#girlDiv img{
+	float: right;
+	margin-right: 100px;
+	margin-top: 50px;
+
+}
+
+#moreDiv{
+	position: absolute;
+	left:0;
+	top:120px;
+	width:100%;
+	height:140px;
+	background-color: black;
+	z-index: 99;
+}
+#moreDiv #jiao{
+	position: absolute;
+	left:1185px;
+	top:-20px;
+	width:0;
+	height:0;
+	border: 8px solid transparent;
+	border-bottom: 13px solid black;
+}
+#moreDiv a{
+	font-size: 16px;
+	color: white;
+	font-weight: 900;
+	display: inline-block;
+	line-height: 140px;
+}
+#moreDiv a:nth-child(2){
+	margin-left: 100px;
+}
+#moreDiv a:nth-child(3){
+	margin-left: 200px;
+}
+#moreDiv a:nth-child(4){
+	margin-left: 250px;
+}
+#moreDiv a:nth-child(5){
+	margin-left: 250px;
+}
+
+

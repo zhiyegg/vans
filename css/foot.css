@@ -1,0 +1,123 @@
+/*foot*/
+.banFoot{
+	width:100%;
+	background-color:#1c1c1c;
+}
+.foot{
+	margin:0 auto;
+	width:1440px;
+	height:471px;
+	background-color:#1c1c1c;
+}
+
+.footUp{
+	padding-top:35px; 
+	padding-left: 50px;
+	height:266px;
+}
+.help{
+	width:490px;
+	height:266px;
+	float: left;
+	border-right:1px solid #919191; 
+}
+.help h3{
+	color:#ffffff;
+	font-size: 18px;
+}
+.connect{
+	width:570px;
+	height:266px;
+	float: left;
+	padding-left: 32px;
+	border-right:1px solid #919191; 
+}
+.ulOne{
+	padding-top: 10px;
+	padding-left: 30px;
+	float: left;
+	line-height: 23px;
+}
+.ulTwo{
+	padding-top: 10px;
+	padding-left: 120px;
+	float: left;
+	line-height: 23px;
+}
+.help a{
+	font-size: 14px;
+	color:#589bc6;
+}
+.help a:hover{
+	color:red;
+}
+.ulOne li:first-child {
+	color:white;
+}
+.ulTwo li:first-child {
+	color:white;
+}
+
+.connect h3{
+	color:#ffffff;
+	font-size: 18px;
+}
+.ulThree{
+	padding-top: 37px;
+	line-height: 23px;
+	padding-left: 30px;
+}
+.ulThree a{
+	font-size: 14px;
+	color:#589bc6;
+}
+.ulThree li:first-child {
+	color:white;
+}
+.ulFour{
+	padding-top: 37px;
+	line-height: 30px;
+	padding-left: 30px;
+}
+.ulFour li:first-child{
+	color:white;
+}
+.ulFour li:last-child{
+	color:#919191;
+}
+.find{
+	float: left;
+
+}
+.find h3{
+	padding-left: 69px;
+	color:white;
+}
+.find a{
+	padding-top: 34px;
+	margin-right: 10px;
+	display: inline-block;
+}
+.find .aDiv{
+	padding-left: 40px;
+}
+.footDown{
+	padding-top: 45px;
+	padding-left: 40px;
+}
+.footDown img{
+	float: left;
+}
+.wordDiv{
+	float: left;
+	color: #589bc6;
+	font-size:16px;
+	padding-left: 22px;
+	line-height: 24px;
+}
+.wordDiv span{
+	color: #919191;
+}
+.wordDiv img{
+	padding-top: 14px;
+}
