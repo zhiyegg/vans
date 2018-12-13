@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/top.css">
+    <link rel="stylesheet" href="../css/goodscar.css">
+    <link rel="stylesheet" href="../css/foot.css">
+</head>
+<body>
+<!--头部导航-->
+<div class="top">
+    <div class="header">
+        <div class="logoimg"><a href="index.html"><img src="../img/logo.jpg"></a></div>
+        <div class="headerRight">
+            <div class="navUp">
+                <div  id="welcomeBox">欢迎：<span id="usernameSpan"></span><input id="btnOut" type="button" value="退出" /></div>
+                <a id="goodsCar" href="">我的购物车</a>
+                <div id="carDiv">
+                    <img src="../img/jiao.png" alt=""/>
+                    购物车还没有物品，请添加~
+                </div>
+                <a href="login.html" id="loginA">登陆/注册</a>
+                <a href="">搜索店铺</a>
+
+            </div>
+            <ul class="navDown">
+                <li><a href="#" id="aboutVans">关于VANS / </a>  </li>
+                <div id="vansDiv">
+                    <div id="jiao"></div>
+                    <a href="#">THIS IS OFF THE WALL </a><a href="#">新闻</a>
+                </div>
+                <li><a href="#">热门 / </a> </li>
+                <li><a href="goods.html" id="man">男子 / </a> </li>
+                <div id="manDiv">
+                    <div id="jiao"></div>
+                    <a href="#">鞋款</a>
+                    <a href="#">服饰</a>
+                    <a href="#">配件</a>
+                    <img src="../img/navpic1.jpg" alt=""/>
+                </div>
+                <li><a href="#" id="girl">女子 / </a> </li>
+                <div id="girlDiv">
+                    <div id="jiao"></div>
+                    <a href="#">鞋款</a>
+                    <a href="#">服饰</a>
+                    <a href="#">配件</a>
+                    <img src="../img/navpic2.jpg" alt=""/>
+                </div>
+                <li><a href="#">CUSTOMS定制鞋 / </a> </li>
+                <li><a href="#" id="more">更多</a></li>
+                <div id="moreDiv">
+                    <div id="jiao"></div>
+                    <a href="#">CLASSICS 经典款</a>
+                    <a href="#">VAULT BY VANS</a>
+                    <a href="#">PRO SKATE 职业鞋款</a>
+                    <a href="#">SNOW 职业滑雪系列</a>
+                </div>
+                <input class="souInp" type="text" placeholder="搜索VANS"/>
+                <input type="submit" value=""/>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<section>
+    <div class="section">
+        <div class="sec_left"><a href="javascript:;"><img src="img/cn_logo.png" alt=""></a></div>
+        <div class="sec_right">
+            <a href="javascript:;"><img src="img/cartnew_flow.png" alt=""></a>
+            <div class="dian"><img src="img/cart_flow_black.gif" alt=""></div>
+            <p>
+                <a href="javascript:;">我的购物车</a>
+                <a href="javascript:;">填写核对订单信息</a>
+                <a href="javascript:;">成功提交订单</a>
+            </p>
+        </div>
+    </div>
+</section>
+<div class="contant">
+    <div class="cont">
+        <h1>我的购物车</h1>
+        <div class="empotyCar">
+            <img src="img/cart-empty-bg.png" alt="">
+            <span>购物车内暂时没有商品，您可以<a href="index.html">马上去挑选商品</a>或<a href="javascript:;">查看我的收藏</a></span>
+        </div>
+    </div>
+</div>
+<div class="shoppingCar">
+    <div class="shopCar">
+        <div class="car_tit">
+            <h1>我的购物车</h1>
+            <ul>
+                <li class="lis1">
+                    <input type="checkbox" id="selectAll">
+                </li>
+                <li class="lis2">商品编号</li>
+                <li class="lis3">商品图片</li>
+                <li class="lis4">商品信息</li>
+                <li class="lis5">商品单价</li>
+                <li class="lis6">商品数量</li>
+                <li class="lis7">商品小计</li>
+                <li class="lis8">删除商品</li>
+            </ul>
+        </div>
+        <div class="car_product">
+            <!-- <ul class="car_uls">
+                <li class="lis1">
+                    <input type="checkbox" class="selectBtn">
+                </li>
+                <li class="lis2">1312121</li>
+                <li class="lis3"><img src="img/11841101_14_01.jpg" alt=""></li>
+                <li class="lis4">
+                    <h3>山东阳谷金山 - 464646</h3>
+                    <p>颜色：<span class="color">说的话官方</span>尺码：<span class="size">38</span></p>
+                </li>
+                <li class="lis5">
+                    <p class="underline">￥<span class="danjia">65</span></p>
+                    <p>￥<span class="danjia">65</span></p>
+                </li>
+                <li class="lis6">
+                    <div class="span_info">
+                        <span class="reduce">-</span>
+                        <input type="text" class="numChange" value="1">
+                        <span class="add">+</span>
+                    </div>
+                </li>
+                <li class="lis7">￥<span class="pricehe">65</span class="pricehe"></li>
+                <li class="lis8"><b class="dell">删除</b></li>
+            </ul>
+            <ul class="car_uls">
+                <li class="lis1">
+                    <input type="checkbox" class="selectBtn">
+                </li>
+                <li class="lis2">1312121</li>
+                <li class="lis3"><img src="img/11841101_14_01.jpg" alt=""></li>
+                <li class="lis4">
+                    <h3>山东阳谷金山 - 464646</h3>
+                    <p>颜色：<span class="color">说的话官方</span>尺码：<span class="size">38</span></p>
+                </li>
+                <li class="lis5">
+                    <p class="underline">￥<span class="danjia">65</span></p>
+                    <p>￥<span class="danjia">65</span></p>
+                </li>
+                <li class="lis6">
+                    <div class="span_info">
+                        <span class="reduce">-</span>
+                        <input type="text" class="numChange" value="1">
+                        <span class="add">+</span>
+                    </div>
+                </li>
+                <li class="lis7">￥<span class="pricehe">65</span class="pricehe"></li>
+                <li class="lis8"><b class="dell">删除</b></li>
+            </ul>
+            <ul class="car_uls">
+                <li class="lis1">
+                    <input type="checkbox" class="selectBtn">
+                </li>
+                <li class="lis2">1312121</li>
+                <li class="lis3"><img src="img/11841101_14_01.jpg" alt=""></li>
+                <li class="lis4">
+                    <h3>山东阳谷金山 - 464646</h3>
+                    <p>颜色：<span class="color">说的话官方</span>尺码：<span class="size">38</span></p>
+                </li>
+                <li class="lis5">
+                    <p class="underline">￥<span class="danjia">65</span></p>
+                    <p>￥<span class="danjia">65</span></p>
+                </li>
+                <li class="lis6">
+                    <div class="span_info">
+                        <span class="reduce">-</span>
+                        <input type="text" class="numChange" value="1">
+                        <span class="add">+</span>
+                    </div>
+                </li>
+                <li class="lis7">￥<span class="pricehe">65</span class="pricehe"></li>
+                <li class="lis8"><b class="dell">删除</b></li>
+            </ul> -->
+        </div>
+        <div class="car_sale">
+            <h1>可用的优惠券</h1>
+        </div>
+        <div class="car_account">
+            <div class="car_up">
+                <p class="car_one"><span class="bao">全场鞋服包邮</span>+￥<span>0.00</span></p>
+            </div>
+            <div class="car_two">
+                <div class="t_left">
+                    <span class="t_del">删除选中的商品</span>
+                    <span class="t_empty">清空购物车</span>
+                </div>
+                <div class="t_right">
+                    应付金额
+                    <span class="t_numBox">￥<span class="t_num">999.00</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="car_foot">
+            <div class="goBox">
+                <span class="goShop">继续购物</span>
+                <span class="gobuy">提交订单</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 固定部分 -->
+<div id="public_fixed">
+    <a class="btn qq_reg" href="javascript:;"></a>
+    <div class="btn btn_phone">
+        <div class="_phone">400-858-2020</div>
+    </div>
+    <div class="btn btn_top"></div>
+</div>
+
+
+
+
+<!--foot-->
+<div class="banFoot">
+    <div class="foot">
+        <div class="footUp">
+            <div class="help">
+                <h3>获取帮助</h3>
+                <ul class="ulOne">
+                    <li>购物</li>
+                    <li><a href="#">男子</a></li>
+                    <li><a href="">女子</a></li>
+                    <li><a href="">CUSTOMS</a></li>
+                    <li><a href="">Vault by Vans</a></li>
+                    <li><a href="">职业鞋款</a></li>
+                    <li><a href="">查找店铺</a></li>
+                </ul>
+                <ul class="ulTwo">
+                    <li>公司</li>
+                    <li><a href="">常见问题</a></li>
+                    <li><a href="">使用条款</a></li>
+                    <li><a href="">隐私政策</a></li>
+                    <li><a href="">可持续发展</a></li>
+                </ul>
+            </div>
+            <div class="connect">
+                <h3>联系我们</h3>
+                <ul class="ulThree">
+                    <li>电子邮件</li>
+                    <li><a href="">contactus@vans.com.cn</a></li>
+                </ul>
+                <ul class="ulFour">
+                    <li>地址</li>
+                    <li>中国上海市南京西路688号8楼</li>
+                </ul>
+            </div>
+            <div class="find">
+                <h3>在这些地方找到我们</h3>
+                <div class="aDiv">
+                    <a href="#"><img src="../img/foot1.jpg" alt=""/></a>
+                    <a href="#"><img src="../img/foot2.jpg" alt=""/></a>
+                    <a href="#"><img src="../img/foot3.jpg" alt=""/></a>
+                    <a href="#"><img src="../img/foot4.jpg" alt=""/></a>
+                    <a href="#"><img src="../img/foot5.jpg" alt=""/></a>
+                </div>
+            </div>
+        </div>
+        <div class="footDown">
+            <img src="../img/vans.jpg" alt=""/>
+            <div class="wordDiv">
+                <p><span>苏ICP13010219号</span> 工信部网站</p>
+                <p>威富服饰（中国）有限公司</p>
+                <img src="../img/slecet.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="../js/cookieTools.js" ></script>
+<script type="text/javascript">
+
+    function initUI(username){
+        if(username!=null){
+            $("#usernameSpan").html(username);
+            $("#welcomeBox").css("display","block");
+            $("#loginA").css("display","none");
+        }else{
+            $("#welcomeBox").css("display","none");
+            $("#loginA").css("display","block");
+        }
+    }
+
+
+
+    $(document).ready(function(){
+        let username = getCookie("name");
+
+        initUI(username);
+        $("#btnOut").click(function(){
+            removeCookie("name");
+            location.href="../html/login.html";
+        });
+    });
+
+    $(document).ready(function(){
+        //加载完成carDiv隐藏
+        $("#carDiv").hide();
+        //滑入goodsCar出现，滑出隐藏
+        $("#goodsCar").hover(function() {
+            $("#carDiv").show();
+        }, function() {
+            $("#carDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#carDiv").hover(function() {
+            $("#carDiv").show();
+        }, function() {
+            $("#carDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#vansDiv").hide();
+        $("#aboutVans").hover(function() {
+            $("#vansDiv").show();
+        }, function() {
+            $("#vansDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#vansDiv").hover(function() {
+            $("#vansDiv").show();
+        }, function() {
+            $("#vansDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#manDiv").hide();
+        $("#man").hover(function() {
+            $("#manDiv").show();
+        }, function() {
+            $("#manDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#manDiv").hover(function() {
+            $("#manDiv").show();
+        }, function() {
+            $("#manDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#girlDiv").hide();
+        $("#girl").hover(function() {
+            $("#girlDiv").show();
+        }, function() {
+            $("#girlDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#girlDiv").hover(function() {
+            $("#girlDiv").show();
+        }, function() {
+            $("#girlDiv").hide();
+        });
+    });
+
+    $(document).ready(function() {
+        $("#moreDiv").hide();
+        $("#more").hover(function() {
+            $("#moreDiv").show();
+        }, function() {
+            $("#moreDiv").hide();
+        });
+        //划入自己出现，滑出自己隐藏
+        $("#moreDiv").hover(function() {
+            $("#moreDiv").show();
+        }, function() {
+            $("#moreDiv").hide();
+        });
+    });
+
+
+
+
+    //-----------------------------------------------------------------------------------------------------------
+
+
+
+</script>

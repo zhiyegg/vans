@@ -70,6 +70,7 @@
         </div>
     </div>
     <!-- content部分 -->
+    <div class="bancon">
     <div class="content">
         <div class="conUp">
             <ul>
@@ -129,7 +130,7 @@
                 function createUI(data){
                     let goodsJson = jQuery.parseJSON(data);
                     console.log(goodsJson);
-                    for(let i=0;i<goodsJson.length;i++){
+                    for(let i=0;i<6;i++){
 
                         let str="<li id='showLi'><img src='"+ goodsJson[i].goodsImg +"' />" +
                             "<a href='details.html?booksId="+goodsJson[i].goodsId+"'>"+ goodsJson[i].goodsName +"</a>" +
@@ -144,6 +145,7 @@
                 }
             </script>
         </div>
+    </div>
     </div>
     <!--foot-->
     <div class="banFoot">

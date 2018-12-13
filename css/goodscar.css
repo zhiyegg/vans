@@ -1,0 +1,321 @@
+body, p, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, td, input, select, option, textarea {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+header {
+  width: 100%;
+  height: 27px;
+  border-bottom: 1px solid #eee;
+  background: #fafafa;
+  font-size: 12px; }
+  header a {
+    padding: 0 10px; }
+  header a:hover {
+    color: #dd0000; }
+  header #head {
+    width: 1190px;
+    margin: 0px auto;
+    line-height: 27px; }
+    header #head #h_left {
+      float: left; }
+      header #head #h_left .logo {
+        display: block;
+        color: #666;
+        width: 181px;
+        height: 27px;
+        float: left; }
+      header #head #h_left #welcomeUesr {
+        float: left;
+        margin: 20px 0 0 30px;
+        display: none; }
+      header #head #h_left #logo_box {
+        line-height: 55px;
+        margin-left: 50px;
+        float: left;
+        display: none; }
+    header #head #h_right {
+      line-height: 27px;
+      float: right; }
+      header #head #h_right a {
+        color: #666;
+        position: relative; }
+        header #head #h_right a i {
+          display: inline-block;
+          width: 12px;
+          height: 15px;
+          margin-right: 10px;
+          background: url(../img/index-icon.png) no-repeat;
+          background-position: -45px -94px; }
+        header #head #h_right a .icon_phone {
+          vertical-align: middle;
+          background: url(../img/mui-global-iconfont.gif) no-repeat; }
+        header #head #h_right a img {
+          position: absolute;
+          left: -56px;
+          top: 18px;
+          display: none; }
+      header #head #h_right a:hover {
+        color: #dd0000; }
+      header #head #h_right #sjsc:hover img {
+        display: block; }
+
+section {
+  width: 100%; }
+  section .section {
+    width: 1190px;
+    height: 102px;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: 2px solid #f3ebeb; }
+    section .section .sec_left {
+      margin-top: 20px;
+      float: left; }
+    section .section .sec_right {
+      margin-top: 30px;
+      float: right;
+      position: relative; }
+      section .section .sec_right p {
+        font-size: 12px; }
+        section .section .sec_right p a {
+          color: #999999; }
+        section .section .sec_right p a:nth-child(1) {
+          color: #000; }
+        section .section .sec_right p a:nth-child(2) {
+          margin: 0 64px; }
+      section .section .sec_right .dian {
+        position: absolute;
+        left: 0;
+        top: 0; }
+
+.contant {
+  width: 100%;
+  display: none; }
+  .contant .cont {
+    width: 1050px;
+    height: 137px;
+    margin: 30px auto; }
+    .contant .cont h1 {
+      font-size: 20px;
+      line-height: 37px; }
+    .contant .cont .empotyCar {
+      width: 1048px;
+      height: 98px;
+      background: #f3f3f3;
+      border: 1px solid #dddddd;
+      font-size: 12px;
+      color: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contant .cont .empotyCar span {
+        margin-left: 20px; }
+      .contant .cont .empotyCar a {
+        color: #005ea7; }
+
+.shoppingCar {
+  width: 100%; }
+  .shoppingCar .shopCar {
+    width: 1050px;
+    overflow: hidden;
+    margin: 30px auto;
+    font-size: 12px; }
+    .shoppingCar .shopCar .lis1 {
+      width: 39px; }
+    .shoppingCar .shopCar .lis2 {
+      width: 102px; }
+    .shoppingCar .shopCar .lis3 {
+      width: 85px; }
+    .shoppingCar .shopCar .lis4 {
+      width: 276px; }
+      .shoppingCar .shopCar .lis4 h3 {
+        width: 270px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-weight: 100;
+        font-size: 14px;
+        color: #333;
+        cursor: pointer; }
+      .shoppingCar .shopCar .lis4 p {
+        width: 270px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 12px;
+        color: #818181;
+        cursor: pointer; }
+        .shoppingCar .shopCar .lis4 p .color {
+          margin-right: 10px; }
+    .shoppingCar .shopCar .lis5 {
+      width: 149px; }
+      .shoppingCar .shopCar .lis5 .underline {
+        color: #818181;
+        text-decoration: line-through; }
+    .shoppingCar .shopCar .lis6 {
+      width: 187px;
+      text-align: center; }
+      .shoppingCar .shopCar .lis6 .span_info {
+        width: 140px;
+        height: 30px;
+        margin: 0 auto;
+        border: 1px solid #ddd; }
+        .shoppingCar .shopCar .lis6 .span_info .reduce {
+          width: 29px;
+          height: 30px;
+          float: left;
+          text-align: center;
+          line-height: 30px;
+          background: #f5f5f5;
+          border-right: 1px solid #ddd;
+          cursor: pointer; }
+        .shoppingCar .shopCar .lis6 .span_info .numChange {
+          text-align: center;
+          outline: none;
+          border: 0;
+          width: 80px;
+          height: 30px;
+          cursor: pointer; }
+        .shoppingCar .shopCar .lis6 .span_info .add {
+          width: 29px;
+          height: 30px;
+          float: right;
+          text-align: center;
+          line-height: 30px;
+          background: #f5f5f5;
+          border-left: 1px solid #ddd;
+          cursor: pointer; }
+    .shoppingCar .shopCar .lis7 {
+      width: 126px; }
+    .shoppingCar .shopCar .lis8 {
+      text-align: center;
+      width: 52px; }
+      .shoppingCar .shopCar .lis8 .dell {
+        cursor: pointer; }
+    .shoppingCar .shopCar .car_tit h1 {
+      font-size: 20px;
+      line-height: 37px; }
+    .shoppingCar .shopCar .car_tit ul {
+      width: 1016px;
+      height: 46px;
+      line-height: 46px;
+      background: #f5f5f5;
+      padding: 0 17px; }
+      .shoppingCar .shopCar .car_tit ul li {
+        float: left; }
+    .shoppingCar .shopCar .car_product .car_uls {
+      width: 1016px;
+      height: 80px;
+      padding: 0 17px;
+      display: flex;
+      color: #333333;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #ccc; }
+      .shoppingCar .shopCar .car_product .car_uls img {
+        width: 50px;
+        height: 50px;
+        cursor: pointer; }
+    .shoppingCar .shopCar .car_sale {
+      width: 1050px;
+      border-bottom: 3px solid #f1f1f1; }
+      .shoppingCar .shopCar .car_sale h1 {
+        font-size: 20px;
+        line-height: 37px; }
+    .shoppingCar .shopCar .car_account {
+      width: 1050px;
+      height: 98px;
+      margin-top: 20px;
+      border-top: 1px solid #dddddd;
+      border-bottom: 1px solid #dddddd;
+      font-size: 14px; }
+      .shoppingCar .shopCar .car_account .car_up {
+        width: 1050px;
+        height: 45px; }
+        .shoppingCar .shopCar .car_account .car_up .car_one {
+          float: right;
+          margin-top: 8px;
+          line-height: 37px; }
+        .shoppingCar .shopCar .car_account .car_up .bao {
+          color: #000;
+          margin-right: 54px; }
+      .shoppingCar .shopCar .car_account .car_two {
+        line-height: 37px; }
+        .shoppingCar .shopCar .car_account .car_two .t_left {
+          color: #005ea7;
+          float: left; }
+          .shoppingCar .shopCar .car_account .car_two .t_left .t_del {
+            margin-left: 12px;
+            margin-right: 20px;
+            cursor: pointer; }
+          .shoppingCar .shopCar .car_account .car_two .t_left .t_empty {
+            cursor: pointer; }
+        .shoppingCar .shopCar .car_account .car_two .t_right {
+          float: right; }
+          .shoppingCar .shopCar .car_account .car_two .t_right .t_numBox {
+            color: #dd0000;
+            font-size: 20px;
+            margin-left: 10px; }
+    .shoppingCar .shopCar .car_foot {
+      width: 1050px;
+      height: 68px;
+      line-height: 68px;
+      background: #f5f5f5; }
+      .shoppingCar .shopCar .car_foot .goBox {
+        float: right; }
+        .shoppingCar .shopCar .car_foot .goBox .goShop {
+          padding: 13px 42px;
+          background: white;
+          border: 1px dashed #cccccc;
+          cursor: pointer; }
+        .shoppingCar .shopCar .car_foot .goBox .gobuy {
+          padding: 14px 43px;
+          background: #dd0000;
+          margin-left: 14px;
+          margin-right: 10px;
+          color: #fff;
+          cursor: pointer; }
+
+#public_fixed {
+  width: 72px;
+  position: fixed;
+  right: 40px;
+  bottom: 35px;
+  z-index: 999; }
+  #public_fixed .btn {
+    width: 72px;
+    height: 73px;
+    margin-bottom: 2px;
+    transition: all 1s; }
+  #public_fixed .qq_reg {
+    display: block;
+    width: 72px;
+    height: 73px;
+    background-color: #6da9de;
+    background-image: url(../img/r_qq.png); }
+  #public_fixed .btn_phone {
+    background-color: #fbb01f;
+    background-image: url(../img/r_phone.png);
+    position: relative; }
+    #public_fixed .btn_phone ._phone {
+      width: 192px;
+      height: 73px;
+      text-align: center;
+      line-height: 73px;
+      color: white;
+      font-size: 20px;
+      background: #ff811b;
+      position: absolute;
+      left: 0px;
+      display: none; }
+  #public_fixed .btn_top {
+    display: none;
+    background-color: #666666;
+    background-image: url(../img/r_top.png); }
+
+/*# sourceMappingURL=cart.css.map */

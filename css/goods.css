@@ -1,12 +1,10 @@
-body{
-    height:100%;
-}
-.content{
 
-    width: 100%;
-    height:100%;
-    overflow: hidden;
+.content{
+    width:1520px;
+    margin:0 auto;
     background-color: #f1f2ed;
+    overflow: hidden;
+
 }
 .content ul{
     height:86px;
@@ -73,6 +71,7 @@ body{
 .conDown{
     position: relative;
     padding-top:20px;
+    overflow: hidden;
 }
 .conDown #selectGoods{
     float: left;
@@ -81,6 +80,7 @@ body{
     background:white;
     margin-left:40px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 .conDown #selectGoods li{
      width:408px;
@@ -134,9 +134,10 @@ body{
 
 #goodsList{
     float: left;
-    width:960px;
+    width:970px;
     height:100%;
     margin-left:50px;
+    overflow: hidden;
 }
 .conDown #goodsList li{
     margin-bottom: 49px;

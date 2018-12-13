@@ -2,14 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <title>商品详情</title>
-    <link rel="stylesheet" href="../css/top.css">
-    <link rel="stylesheet" href="../css/details.css">
-    <link rel="stylesheet" href="../css/foot.css">
+    <link rel="stylesheet" href="../css/top.css"/>
+    <link rel="stylesheet" href="../css/details.css"/>
+    <link rel="stylesheet" href="../css/foot.css"/>
+
     <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="../js/jquery1.42.min.js"></script>
-    <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.3.js"></script>
+    <!--<script type="text/javascript" src="../js/jquery1.42.min.js"></script>-->
+    <!--<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>-->
+    <!--<script type="text/javascript" src="../js/jquery.SuperSlide.2.1.3.js"></script>-->
+
+    <script type="text/javascript" src="../js/jquery.imagezoom.min.js"></script>
     <script type="text/javascript" src="../js/cookieTools.js" ></script>
+
+    <style>
+        /*html{overflow-y:scroll;}*/
+        /*body{margin:0; font:12px "\5B8B\4F53",san-serif;background:#ffffff;}*/
+        div,ul,li{padding:0; margin:0;}
+        li{list-style-type:none;}
+        img{vertical-align:top;border:0;}
+
+        /* box */
+        .box{width:740px;float: left;}
+        .tb-pic a{display:table-cell;text-align:center;vertical-align:middle;}
+        .tb-pic a img{vertical-align:middle;}
+        .tb-pic a{*display:block;*font-family:Arial;*line-height:1;}
+        .tb-thumb{margin:10px 0 0;overflow:hidden;}
+        .tb-thumb li{background:none repeat scroll 0 0 transparent;float:left;height:88px;margin:0 6px 0 0;overflow:hidden;padding:1px;}
+        .tb-s310, .tb-s310 a{height:740px;width:740px;}
+        .tb-s310, .tb-s310 img{max-height:740px;max-width:740px;}
+        .tb-s310 a{*font-size:271px;}
+        .tb-s40 a{*font-size:35px;}
+        .tb-s40, .tb-s40 a{height:86px;width:86px;}
+        .tb-booth{border:1px solid #CDCDCD;position:relative;z-index:1;}
+        .tb-thumb .tb-selected{background:none repeat scroll 0 0 #C30008;height:86px;padding:2px;}
+        .tb-thumb .tb-selected div{background-color:#FFFFFF;border:medium none;}
+        .tb-thumb li div{border:1px solid #CDCDCD;}
+        div.zoomDiv{z-index:999;position:absolute;top:0px;left:0px;width:400px;height:400px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+        div.zoomMask{position:absolute;background:url("../images/mask.png") repeat scroll 0 0 transparent;cursor:move;z-index:1;}
+    </style>
 </head>
 <body>
 <!--头部导航-->
@@ -73,16 +105,47 @@
             <a href="index.html">首页</a>/<a href="#">男装</a>/
         </div>
         <div class="middleDiv">
-            <div class="mLeft">
 
-                <!--<ul class="mLeftPig">-->
-                    <!--<li></li>-->
-                    <!--<li></li>-->
-                    <!--<li></li>-->
-                    <!--<li></li>-->
-                    <!--<li></li>-->
-                <!--</ul>-->
+            <div class="box">
+
+                <div class="tb-booth tb-pic tb-s310">
+                    <a href="../images/01.jpg"><img src="../images/01_mid.jpg" alt="美女" rel="../images/01.jpg" class="jqzoom" /></a>
+                </div>
+
+                <ul class="tb-thumb" id="thumblist">
+                    <li class="tb-selected"><div class="tb-pic tb-s40"><a href="#"><img src="../images/01_small.jpg" mid="../images/01_mid.jpg" big="../images/01.jpg"></a></div></li>
+                    <li><div class="tb-pic tb-s40"><a href="#"><img  src="../images/02_small.jpg" mid="../images/02_mid.jpg" big="../images/02.jpg"></a></div></li>
+                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../images/03_small.jpg" mid="../images/03_mid.jpg" big="../images/03.jpg"></a></div></li>
+                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../images/04_small.jpg" mid="../images/04_mid.jpg" big="../images/04.jpg"></a></div></li>
+                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../images/05_small.jpg" mid="../images/05_mid.jpg" big="../images/05.jpg"></a></div></li>
+                </ul>
+
             </div>
+
+            <script type="text/javascript">
+                $(document).ready(function(){
+
+                    $(".jqzoom").imagezoom();
+
+                    $("#thumblist li a").click(function(){
+                        $(this).parents("li").addClass("tb-selected").siblings().removeClass("tb-selected");
+                        $(".jqzoom").attr('src',$(this).find("img").attr("mid"));
+                        $(".jqzoom").attr('rel',$(this).find("img").attr("big"));
+                    });
+
+                });
+            </script>
+
+
+
+
+
+
+
+
+
+
+
             <ul class="mRight">
                 <li>
                     <p id="goodsName"></p>
@@ -205,11 +268,16 @@
 
         $.ajax({
             type:"get",
-            url:"../php/getGoodsList.php",
-            success:function(data){
-                createUI(data);
-            }
+            url:"../php/getGoodsList.php"
+
+        }).done(function(data){
+            createUI(data);
         });
+
+
+        // $("#exzoom").exzoom({
+        //     autoPlay: false,
+        // });
 
 
         function createUI(data){
@@ -224,14 +292,52 @@
                 // console.log(val.goodsId);
 
                 if(id == val.goodsId){
-                    //console.log(val.goodsImg);
-                    //console.log(val.goodsName);
-                    //console.log(val.goodsPrice);
+                    console.log(val.beiyong2);
+                    console.log(val.beiyong3);
+                    console.log(val.beiyong4);
                     //let goodsName = val.goodsName;
 
                     $("#xuanze").append(val.goodsDesc);
                     $("#goodsName").append(val.goodsName);
                     $("#goodsPrice").append(val.goodsPrice);
+
+
+
+
+
+
+
+
+
+                    let goodsPi = "<ul class='exzoom_img_ul'>\n" +
+                                   "<li><img src='"+val.beiyong2+"'/></li>\n" +
+                                   "<li><img src='"+val.beiyong3+"'/></li>\n" +
+                                   "<li><img src='"+val.beiyong4+"'/></li>\n" +
+                                   "<li><img src='"+val.beiyong5+"'/></li>\n" +
+                                   "<li><img src='"+val.beiyong6+"'/></li>\n" +
+                                   "<li><img src='"+val.beiyong2+"'/></li>\n" +
+                                   "<li><img src='"+val.beiyong3+"'/></li>\n" +
+                                   "<li><img src='"+val.beiyong4+"'/></li>\n" +
+                                   "</ul>";
+
+                    $(".exzoom_img_box").append(goodsPi);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     let goodsPic = "<img class='bigPic' src='"+val.beiyong2+"'/>" +
                         "<ul class='mLeftPig'>" +

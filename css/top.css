@@ -79,8 +79,8 @@ img{
 }
 #welcomeBox{
 	display: none;
-	position: absolute;
-	right:335px;
+	/*position: absolute;*/
+	/*right:335px;*/
 	float: left;
 	color:#9b9b9b;
 	font-weight:900;
