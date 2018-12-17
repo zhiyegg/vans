@@ -1,0 +1,200 @@
+.content{
+    background-image: url("../img/hotbg.jpg");
+    background-repeat: repeat-y;
+}
+.content .a1{
+    display: block;
+    width:1440px;
+    height:500px;
+    margin:0 auto;
+    position:relative;
+}
+.content .a1 div{
+    border:2px solid white;
+    border-left: 1px solid white;
+    width:177px;
+    height:42px;
+    position:absolute;
+    left:633px;
+    bottom:20px;
+    color:white;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+}
+.content .a1 div:hover{
+    border:2px solid #1c1c1c;
+    border-left: 1px solid #1c1c1c;
+    background-color: #1c1c1c;
+
+}
+
+
+
+.content .c2{
+    padding-top:6px;
+    padding-bottom:6px;
+    width:1440px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.content .c2 a{
+    display: block;
+    width:717px;
+    height:500px;
+    float: left;
+    position: relative;
+}
+.content .c2 a:nth-child(1){
+    margin-right:6px;
+}
+
+.content .c2  div{
+    border:2px solid white;
+    border-left: 1px solid white;
+    width:177px;
+    height:42px;
+    position:absolute;
+    left:633px;
+    bottom:20px;
+    color:white;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+}
+.content .c2 a div{
+     position: absolute;
+     left:22px;
+     bottom: 20px;
+ }
+.content .c2 a div:hover{
+    border:2px solid #1c1c1c;
+    border-left: 1px solid #1c1c1c;
+    background-color: #1c1c1c;
+}
+.content .c2 a:nth-child(2) p{
+    position: absolute;
+    left:22px;
+    bottom:87px;
+    color:white;
+    font-size:16px;
+    font-weight: 900;
+}
+
+
+.content .c3{
+    display: block;
+    margin:0 auto;
+    width:1440px;
+    height:500px;
+    position: relative;
+}
+.content .c3 p{
+    position: absolute;
+    left:20px;
+    bottom:249px;
+    color:white;
+    font-size:36px;
+    font-weight: 900;
+}
+.content .c3 div{
+    position: absolute;
+    left:20px;
+    bottom:184px;
+    border:2px solid white;
+    border-left: 1px solid white;
+    width:177px;
+    height:42px;
+    color:white;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+}
+.content .c3 div:hover{
+    border:2px solid #1c1c1c;
+    border-left: 1px solid #1c1c1c;
+    background-color: #1c1c1c;
+}
+
+
+
+
+.content .c4{
+    padding-top:6px;
+    padding-bottom:52px;
+    width:1440px;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.content .c4 a{
+    display: block;
+    width:717px;
+    height:500px;
+    float: left;
+    position: relative;
+}
+.content .c4 a:nth-child(1){
+    margin-right:6px;
+}
+
+.content .c4  div{
+    border:2px solid white;
+    border-left: 1px solid white;
+    width:177px;
+    height:42px;
+    position:absolute;
+    left:633px;
+    bottom:20px;
+    color:white;
+    line-height: 42px;
+    text-align: center;
+    font-size: 16px;
+}
+.content .c4 a div{
+    position: absolute;
+    left:22px;
+    bottom: 20px;
+}
+.content .c4 a div:hover{
+    border:2px solid #d41920;
+    border-left: 1px solid #d41920;
+    background-color: #d41920;
+}
+.content .c4 a:nth-child(2) p{
+    position: absolute;
+    left:22px;
+    bottom:87px;
+    color:white;
+    font-size:16px;
+    font-weight: 900;
+}
+.content .c4 p{
+    position: absolute;
+    left:22px;
+    bottom:84px;
+    color:white;
+    font-size:36px;
+    font-weight: 900;
+}
+.content .c4 a:nth-child(1) p{
+    position: absolute;
+    left:22px;
+    bottom:84px;
+    color:white;
+    font-size:20px;
+    font-weight: 100;
+}
+
+.content a{
+    overflow: hidden;
+}
+.content img{
+    -webkit-transition: ease .8s;
+    transition: ease .8s;
+}
+.content img:hover{
+    -webkit-transform: scale(1.1); /*放大1.2倍*/
+    transform: scale(1.1); /*放大1.2倍*/
+}

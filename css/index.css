@@ -219,6 +219,7 @@
 }
 .activity .actPic ul li a:last-child{
 	display: block;
+
 	text-align: center;
 	color:black;
 	line-height: 39px;

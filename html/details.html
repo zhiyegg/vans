@@ -145,31 +145,32 @@
 
 
 
-
-            <ul class="mRight">
-                <li>
-                    <p id="goodsName"></p>
-                    <p>￥<span id="goodsPrice"></span></p>
-                </li>
-                <li>
-                    <p>选择颜色: <span id="xuanze"></span></p>
-                    <p id="colorP"></p>
-                </li>
-                <li>
-                    <p>选择尺寸:</p>
-                    <p><a href="">L</a><a href="">M</a><a href="">XS</a><a href="">XL</a><a href="">XXL</a><a
-                            href="">XXXL</a></p>
-                </li>
-                <li>
-                    选购数量：<span>－</span><input type="text" value="1"/><span>＋</span>
-                </li>
-                <li>
-                    <input type="button" value="加入购物车"/><input type="button" value="立即购买"/><span>❤收藏该商品</span>
-                </li>
-                <li>
-                    <img src="../img/goodscarpig.jpg" alt=""/><img src="../img/goodsshuo.jpg" alt=""/>
-                </li>
-            </ul>
+            <form action="../php/addShoppingCart.php" method="post">
+                <ul class="mRight">
+                    <li>
+                        <p id="goodsName" name="goodsName"></p>
+                        <p>￥<span id="goodsPrice" name="goodsPrice"></span></p>
+                    </li>
+                    <li>
+                        <p>选择颜色: <span id="xuanze"></span></p>
+                        <p id="colorP"></p>
+                    </li>
+                    <li>
+                        <p>选择尺寸:</p>
+                        <p><a href="">L</a><a href="">M</a><a href="">XS</a><a href="">XL</a><a href="">XXL</a><a
+                                href="">XXXL</a></p>
+                    </li>
+                    <li>
+                        选购数量：<span>－</span><input type="text" value="1"/><span>＋</span>
+                    </li>
+                    <li>
+                        <input type="submit" value="加入购物车"/><input type="button" value="立即购买"/><span>❤收藏该商品</span>
+                    </li>
+                    <li>
+                        <img src="../img/goodscarpig.jpg" alt=""/><img src="../img/goodsshuo.jpg" alt=""/>
+                    </li>
+                </ul>
+            </form>
         </div>
         <div class="downDiv">
             <h3>商品详情</h3>
